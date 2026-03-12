@@ -54,7 +54,7 @@ platforms:
     enabled: true
 ```
 
-The agent will search Google Jobs, Glassdoor, and Wellfound. It presents a ranked list of discovered jobs. It does NOT auto-apply to external sites -- you choose what to pursue.
+The agent will search Google Jobs and Wellfound. It presents a ranked list of discovered jobs. It does NOT auto-apply to external sites -- you choose what to pursue.
 
 ### Both [Recommended]
 

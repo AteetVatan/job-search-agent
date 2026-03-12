@@ -36,11 +36,6 @@ For each platform in `config.yaml` → `platforms.web_search.search_engines`:
 - Apply freshness filter from config [e.g., last 7 days]
 - Extract visible job cards [title, company, location, posted date]
 
-**Glassdoor**:
-- Navigate to glassdoor.com
-- Search by role title and location
-- Extract job listings
-
 **Wellfound [AngelList Talent]**:
 - Navigate to wellfound.com/jobs
 - Filter by role, location, and remote

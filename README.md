@@ -6,7 +6,7 @@ No code to run. No dependencies to install. Just configure, paste the orchestrat
 
 ## What It Does
 
-- **Job Discovery** -- Searches Google Jobs, Glassdoor, and Wellfound for relevant positions, filters by role/location/language, and presents ranked results
+- **Job Discovery** -- Searches Google Jobs and Wellfound for relevant positions, filters by role/location/language, and presents ranked results
 - **LinkedIn Easy Apply** -- Automatically fills and submits Easy Apply forms with your CV, cover letters, and form answers
 - **Cover Letter Generation** -- 5 structurally different variants, strictly grounded to your CV (zero hallucination)
 - **Anti-Detection** -- Random delays (30s-5min), dwell time, scroll variance, pagination randomization, CAPTCHA detection

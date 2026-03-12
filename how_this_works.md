@@ -70,7 +70,7 @@ The project uses two config files:
 
 ### Mode 2: Web Job Search
 
-1. The agent searches Google Jobs, Glassdoor, and Wellfound for your target roles and locations
+1. The agent searches Google Jobs and Wellfound for your target roles and locations
 2. It extracts job listings, filters out excluded roles, and scores relevance
 3. It presents a ranked table of discovered jobs
 4. You decide which to pursue: some may be LinkedIn Easy Apply [routed to Mode 1], others are external

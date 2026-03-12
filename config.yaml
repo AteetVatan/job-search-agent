@@ -108,7 +108,6 @@ platforms:
     enabled: true
     search_engines:
       - "Google Jobs"
-      - "Glassdoor"
       - "Wellfound"
     freshness: "last 7 days"
 
