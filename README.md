@@ -17,7 +17,7 @@ No code to run. No dependencies to install. Just configure, paste the orchestrat
 ### 1. Clone and Configure
 
 ```bash
-git clone https://github.com/your-username/job-search-agent.git
+git clone https://github.com/AteetVatan/job-search-agent.git
 cd job-search-agent
 cp config.private.yaml.example config.private.yaml
 ```
