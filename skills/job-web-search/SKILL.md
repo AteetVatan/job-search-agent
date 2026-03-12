@@ -36,12 +36,6 @@ For each platform in `config.yaml` → `platforms.web_search.search_engines`:
 - Apply freshness filter from config [e.g., last 7 days]
 - Extract visible job cards [title, company, location, posted date]
 
-**Indeed**:
-- Navigate to indeed.com or indeed.de
-- Enter query in "What" field, location in "Where" field
-- Filter by date posted [last 7 days]
-- Extract job listings from results
-
 **Glassdoor**:
 - Navigate to glassdoor.com
 - Search by role title and location
