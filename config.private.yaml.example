@@ -1,0 +1,80 @@
+# ============================================================
+# JOB SEARCH AGENT — Private Configuration (EXAMPLE)
+# ============================================================
+# Copy this file to config.private.yaml and fill in your data.
+# config.private.yaml is gitignored and will NOT be checked in.
+# ============================================================
+
+# === APPLICANT ===
+applicant:
+  name: "Your Name"
+  title: "Your Professional Title"
+  email: "your@email.com"
+  phone: "+1 234 567 8900"
+  location: "City, Country"
+  portfolio: "https://your-portfolio.com/"
+  linkedin: "https://www.linkedin.com/in/your-profile/"
+  github: "https://github.com/your-username"
+  citizenship: "Your citizenship and work rights"
+  visa_required: false
+  availability: "Immediately"
+  notice_period: "None"
+  willing_to_relocate: true
+  salary_expectation: "75000 EUR"
+
+# === DOCUMENTS ===
+# All uploadable files are stored in the documents/ directory.
+# The agent will look here for CV, certificates, and save generated cover letters.
+documents:
+  directory: "documents/"
+  cv: "documents/cv/cv.pdf"
+  certificates_dir: "documents/certificates/"
+  cover_letters_dir: "documents/cover-letters/"
+  # List certificate files here so the agent can upload them when forms ask
+  certificates:
+    - "documents/certificates/your_certificate.pdf"
+  # Generated cover letters are saved to documents/cover-letters/
+  # Format: cover_letter_[company]_[jobtitle].pdf or .txt
+
+# === SKILLS & EXPERIENCE (for form auto-fill) ===
+# When forms ask "How many years of experience with X?", these values are used.
+skills_years:
+  Python: 0
+  AWS: 0
+  Docker: 0
+  "CI/CD": 0
+  "AI/ML Engineering": 0
+  "Generative AI / Gen AI": 0
+  "LLMs / NLP / RAG": 0
+  LangChain: 0
+  FastAPI: 0
+  PostgreSQL: 0
+  MongoDB: 0
+  Redis: 0
+  TensorFlow: 0
+  PyTorch: 0
+  Azure: 0
+  Kubernetes: 0
+  GCP: 0
+  # Default for unlisted but plausible skills: 3
+  # Default for completely unknown skills: 0
+
+# === STANDARD FORM ANSWERS ===
+standard_answers:
+  can_start_immediately: "Yes"
+  work_authorization_eu: "Yes"
+  visa_sponsorship_required: "No"
+  willing_to_relocate: "Yes"
+  notice_period: "Immediate"
+  start_date: "Immediately"
+  expected_salary: "75000 EUR"
+  disability_status: "No"
+  veteran_status: "No"
+  gender: "Male"
+  race_ethnicity: "Prefer not to say"
+  bachelors_degree: "Yes"
+  masters_degree: "No"
+  phd_degree: "No"
+  website_url: "https://your-portfolio.com/"
+  linkedin_url: "https://www.linkedin.com/in/your-profile/"
+  github_url: "https://github.com/your-username"

@@ -1,0 +1,130 @@
+# ============================================================
+# JOB SEARCH AGENT — Configuration
+# ============================================================
+# This file contains GENERIC settings shared across all users.
+# Your PRIVATE data (name, email, skills, etc.) goes in:
+#   config.private.yaml  (copy config.private.yaml.example)
+# ============================================================
+
+# === JOB SEARCH ===
+job_search:
+  target_roles:
+    - "AI Engineer"
+    - "AI Architect"
+    - "GenAI Engineer"
+    - "LLM Engineer"
+    - "NLP Engineer"
+    - "Agentic AI Engineer"
+    - "AI Manager"
+    - "Head of AI"
+    - "AI Team Lead"
+    - "Lead AI Engineer"
+    - "Founding AI Engineer"
+    - "AI Co-founder"
+
+  exclude_roles:
+    - "ML Engineer"
+    - "Machine Learning Engineer"
+    - "ML Research"
+    - "Data Scientist"
+    - "Data Analyst"
+    - "Frontend Engineer"
+    - "Ruby Developer"
+    - "Java Developer"
+    - "Go Developer"
+    - "Rust Developer"
+
+  locations:
+    - "Germany"
+    - "Netherlands"
+    - "Austria"
+    - "Switzerland"
+    - "France"
+    - "Belgium"
+    - "Luxembourg"
+    - "Ireland"
+    - "Denmark"
+    - "Sweden"
+    - "Finland"
+    - "Norway"
+    - "Spain"
+    - "Portugal"
+    - "Italy"
+    - "Poland"
+    - "Czech Republic"
+    - "Estonia"
+    - "EU"
+    - "Remote (EU)"
+    - "Remote (Global)"
+
+  keywords:
+    - "AI"
+    - "LLM"
+    - "Agentic"
+    - "GenAI"
+    - "Python AI"
+    - "AI Architect"
+
+  # === LANGUAGE FILTER ===
+  # Skip jobs that REQUIRE fluency in languages the applicant does not speak.
+  # Customize accepted_languages to match your language abilities.
+  language_filter:
+    accepted_languages:
+      - "English"   # fluent / native
+      - "German"    # beginner / B1
+    skip_if_required:
+      - "French"
+      - "Dutch"
+      - "Spanish"
+      - "Italian"
+      - "Polish"
+      - "Czech"
+      - "Swedish"
+      - "Danish"
+      - "Norwegian"
+      - "Finnish"
+      - "Portuguese"
+      - "Hungarian"
+      - "Greek"
+      - "Romanian"
+      - "Bulgarian"
+      - "Croatian"
+      - "Mandarin"
+      - "Japanese"
+      - "Korean"
+      - "Arabic"
+    # Rule: If a JD says "fluent French required" or "must speak Dutch" → skip.
+    #        If a JD says "French is a plus" or "German B1 preferred" → do NOT skip.
+    #        If no language is mentioned → do NOT skip (assume English is fine).
+
+# === PLATFORMS ===
+platforms:
+  linkedin:
+    enabled: true
+    easy_apply_only: true
+    search_url: "https://www.linkedin.com/jobs/search/?f_TPR=r86400&geoId=91000000&keywords=AI&origin=JOB_SEARCH_PAGE_JOB_FILTER&refresh=true&spellCorrectionEnabled=true"
+
+  web_search:
+    enabled: true
+    search_engines:
+      - "Google Jobs"
+      - "Indeed"
+      - "Glassdoor"
+      - "Wellfound"
+    freshness: "last 7 days"
+
+# === ANTI-DETECTION ===
+anti_detection:
+  delay_between_apps_min_seconds: 30
+  delay_between_apps_max_seconds: 300
+  dwell_time_min_seconds: 8
+  dwell_time_max_seconds: 45
+  scroll_job_description: true
+  randomize_pagination: true
+
+# === TEXT GENERATION ===
+text_generation:
+  strict_cv_grounding: true
+  cv_source_file: "cv-source-of-truth.md"
+  humanized_writing: true
+  max_cover_letter_words: 200

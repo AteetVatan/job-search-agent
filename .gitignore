@@ -1,0 +1,16 @@
+# === Private configuration (contains personal data) ===
+config.private.yaml
+
+# === Personal documents (keep .gitkeep files) ===
+documents/cv/*
+!documents/cv/.gitkeep
+documents/certificates/*
+!documents/certificates/.gitkeep
+documents/cover-letters/*
+!documents/cover-letters/.gitkeep
+
+# === OS / Editor ===
+.DS_Store
+Thumbs.db
+*.swp
+*~
